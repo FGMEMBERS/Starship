@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <model>
+    <path>Aircraft/Starship/Models/Panel/Instruments/pfd/pfd.xml</path>
+    <offsets>
+      <x-m>  0.204 </x-m>
+      <y-m> -0.387 </y-m>
+      <z-m>  0.286 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Panel/Instruments/pfd/pfd.xml</path>
+    <offsets>
+      <x-m> 0.204 </x-m>
+      <y-m> 0.387 </y-m>
+      <z-m> 0.286 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Panel/Instruments/enav/enav.xml</path>
+    <offsets>
+      <x-m>  0.204</x-m>
+      <y-m> -0.247 </y-m>
+      <z-m>  0.292 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Panel/Instruments/enav/enav.xml</path>
+    <offsets>
+      <x-m> 0.204</x-m>
+      <y-m> 0.247 </y-m>
+      <z-m> 0.292 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.208</x-m>
+      <y-m> -0.502 </y-m>
+      <z-m>  0.292 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> 0.208</x-m>
+      <y-m> 0.502 </y-m>
+      <z-m> 0.292 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.208</x-m>
+      <y-m> -0.503 </y-m>
+      <z-m>  0.189 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> 0.208</x-m>
+      <y-m> 0.503 </y-m>
+      <z-m> 0.189 </z-m>
+    </offsets>
+  </model>
+ 
+</PropertyList>
+

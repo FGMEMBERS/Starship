@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<!-- Modified instrument of the Boeing 747 -->
+
+<PropertyList>
+
+ <path>boeing747-400-asi-jw.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Needle1</object-name>
+  <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>-9.5</dep>
+   </entry>
+   <entry>
+    <ind>60</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>250</ind>
+    <dep>244</dep>
+   </entry>
+   <entry>
+    <ind>300</ind>
+    <dep>265.5</dep>
+   </entry>
+   <entry>
+    <ind>450</ind>
+    <dep>331</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
+
+
