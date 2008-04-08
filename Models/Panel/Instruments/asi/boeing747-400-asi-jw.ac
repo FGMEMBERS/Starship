@@ -5,7 +5,7 @@ kids 5
 OBJECT poly
 name "Face"
 loc 0.000797334 -2.21469e-05 -3.4906e-05
-texture "boeing747-400-asi-jw.rgb"
+texture "boeing747-400-asi-jw.png"
 numvert 17
 0 2.6077e-08 -0.0389957
 0 0.014923 -0.0360272
@@ -125,7 +125,7 @@ kids 0
 OBJECT poly
 name "Needle1"
 loc 0.00360006 0.0136946 0.0194406
-texture "boeing747-400-asi-jw.rgb"
+texture "boeing747-400-asi-jw.png"
 numvert 8
 0 0.0185325 -0.0189256
 0 0.0211996 -0.0194756
@@ -170,7 +170,7 @@ kids 0
 OBJECT poly
 name "rimoutside"
 loc 0.000192508 0.00302084 0.0017798
-texture "boeing747-400-bezel-jw.rgb"
+texture "boeing747-400-bezel-jw.png"
 numvert 64
 0.00330496 -0.00312896 -0.0413366
 0.00330496 0.00473392 -0.0405754
@@ -465,7 +465,7 @@ kids 0
 OBJECT poly
 name "riminside"
 loc -0.00304074 -0.000459064 -2.18302e-06
-texture "boeing747-400-bezel-jw.rgb"
+texture "boeing747-400-bezel-jw.png"
 numvert 96
 -7.66977e-05 0.00785576 0.0373298
 -7.66977e-05 0.000348784 0.0380611
@@ -952,7 +952,7 @@ kids 0
 OBJECT poly
 name "bezel"
 loc 0.00317582 -0.000306111 -0.000450164
-texture "boeing747-400-bezel-jw.rgb"
+texture "boeing747-400-bezel-jw.png"
 numvert 32
 -0.00312573 0.0334287 0.0454969
 3.72529e-09 0.0334287 0.0454969

@@ -2,7 +2,7 @@
 
 <PropertyList>
 
- <sim>
+ <sim include="Nasal/views.xml">
 
   <author>BARANGER Emmanuel (3D)</author>
   <aircraft-version>0.1</aircraft-version>
@@ -19,24 +19,9 @@
   </model>
 
   <startup>
-   <splash-texture>Aircraft/Starship/starship-splash.rgb</splash-texture>
+   <splash-texture>Aircraft/Starship/starship-splash.png</splash-texture>
   </startup>
   
-  <virtual-cockpit archive="y">true</virtual-cockpit>
-
-  <chase-distance-m type="double" archive="y">-30.0</chase-distance-m>
-
-  <view>
-    <internal archive="y">true</internal>
-    <config>
-      <x-offset-m archive="y"> -0.420 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">  0.476 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -3.389 </z-offset-m> <!-- Back  -->
-      <pitch-offset-deg> 0.0 </pitch-offset-deg>
-      <default-field-of-view-deg type="double"> 60.0 </default-field-of-view-deg>
-    </config>
-  </view>
-
  </sim>
 
  <controls>

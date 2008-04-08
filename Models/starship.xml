@@ -10,7 +10,6 @@
     <object-name>interieur</object-name>
     <object-name>separation</object-name>
     <object-name>planchet</object-name>
-    <object-name>pilote</object-name>
     <object-name>porte</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
@@ -67,10 +66,21 @@
     <object-name>propblurD</object-name>
   </animation>
 
+  <!-- Pilote -->
+  <model>
+    <name>Pilote</name>
+    <path>Aircraft/Starship/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -3.572 </x-m>
+      <y-m> -0.407 </y-m>
+      <z-m> -0.027 </z-m>
+    </offsets>
+  </model>
+
   <!-- Pilote invisible depuis le cockpit -->
   <animation>
     <type>select</type>
-    <object-name>pilote</object-name>
+    <object-name>Pilote</object-name>
     <condition>
       <greater-than>
         <property>sim/current-view/view-number</property>

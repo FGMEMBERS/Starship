@@ -8,7 +8,7 @@ OBJECT poly
 name "arrow1"
 data 8
 Mesh.071
-texture "boeing747-400-enav-jw-02.rgb"
+texture "boeing747-400-enav-jw-02.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -55,7 +55,7 @@ OBJECT poly
 name "arrow2"
 data 8
 Mesh.072
-texture "boeing747-400-enav-jw-02.rgb"
+texture "boeing747-400-enav-jw-02.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -102,7 +102,7 @@ OBJECT poly
 name "arrow3"
 data 8
 Mesh.073
-texture "boeing747-400-enav-jw-02.rgb"
+texture "boeing747-400-enav-jw-02.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -149,7 +149,7 @@ OBJECT poly
 name "background"
 data 8
 Mesh.042
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -196,7 +196,7 @@ OBJECT poly
 name "bezel"
 data 8
 Mesh.070
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -274,7 +274,7 @@ OBJECT poly
 name "bug"
 data 8
 Mesh.075
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -321,7 +321,7 @@ OBJECT poly
 name "dmel1"
 data 8
 Mesh.054
-texture "digits.rgb"
+texture "digits.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -368,7 +368,7 @@ OBJECT poly
 name "dmel2"
 data 8
 Mesh.055
-texture "digits.rgb"
+texture "digits.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -415,7 +415,7 @@ OBJECT poly
 name "dmel3"
 data 8
 Mesh.056
-texture "digits.rgb"
+texture "digits.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -462,7 +462,7 @@ OBJECT poly
 name "dmel4"
 data 8
 Mesh.057
-texture "digits.rgb"
+texture "digits.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -509,7 +509,7 @@ OBJECT poly
 name "dmellabel"
 data 8
 Mesh.052
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -556,7 +556,7 @@ OBJECT poly
 name "dmerlabel"
 data 8
 Mesh.045
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -603,7 +603,7 @@ OBJECT poly
 name "dot"
 data 8
 Mesh.053
-texture "digits.rgb"
+texture "digits.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -650,7 +650,7 @@ OBJECT poly
 name "gsarrow"
 data 8
 Mesh.068
-texture "boeing747-400-enav-jw-02.rgb"
+texture "boeing747-400-enav-jw-02.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -697,7 +697,7 @@ OBJECT poly
 name "gsindex"
 data 8
 Mesh.069
-texture "boeing747-400-enav-jw-02.rgb"
+texture "boeing747-400-enav-jw-02.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -744,7 +744,7 @@ OBJECT poly
 name "hdg1"
 data 8
 Mesh.066
-texture "digits.rgb"
+texture "digits.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -791,7 +791,7 @@ OBJECT poly
 name "hdg2"
 data 8
 Mesh.065
-texture "digits.rgb"
+texture "digits.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -838,7 +838,7 @@ OBJECT poly
 name "hdg3"
 data 8
 Mesh.064
-texture "digits.rgb"
+texture "digits.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -885,7 +885,7 @@ OBJECT poly
 name "hdglabel"
 data 8
 Mesh.063
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -932,7 +932,7 @@ OBJECT poly
 name "ilsllabel"
 data 8
 Mesh.043
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -979,7 +979,7 @@ OBJECT poly
 name "ilsrlabel"
 data 8
 Mesh.044
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1026,7 +1026,7 @@ OBJECT poly
 name "locindex"
 data 8
 Mesh.074
-texture "boeing747-400-enav-jw-02.rgb"
+texture "boeing747-400-enav-jw-02.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1073,7 +1073,7 @@ OBJECT poly
 name "maglabel.001"
 data 8
 Mesh.062
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1120,7 +1120,7 @@ OBJECT poly
 name "navidl1"
 data 8
 Mesh.058
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1167,7 +1167,7 @@ OBJECT poly
 name "navidl2"
 data 8
 Mesh.059
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1214,7 +1214,7 @@ OBJECT poly
 name "navidl3"
 data 8
 Mesh.060
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1261,7 +1261,7 @@ OBJECT poly
 name "navidl4"
 data 8
 Mesh.061
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1308,7 +1308,7 @@ OBJECT poly
 name "navidr1"
 data 8
 Mesh.050
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1355,7 +1355,7 @@ OBJECT poly
 name "navidr2"
 data 8
 Mesh.049
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1402,7 +1402,7 @@ OBJECT poly
 name "navidr3"
 data 8
 Mesh.048
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1449,7 +1449,7 @@ OBJECT poly
 name "navidr4"
 data 8
 Mesh.047
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1496,7 +1496,7 @@ OBJECT poly
 name "rose.001"
 data 8
 Mesh.067
-texture "boeing747-400-enav-jw-01.rgb"
+texture "boeing747-400-enav-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -1731,7 +1731,7 @@ OBJECT poly
 name "vorllabel"
 data 8
 Mesh.051
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1778,7 +1778,7 @@ OBJECT poly
 name "vorrlabel"
 data 8
 Mesh.046
-texture "boeing747-400-efis-common-jw-01.rgb"
+texture "boeing747-400-efis-common-jw-01.png"
 texrep 1 1
 crease 30.000000
 numvert 9

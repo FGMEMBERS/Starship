@@ -7,36 +7,36 @@
   <model>
     <path>Aircraft/Starship/Models/Panel/Instruments/pfd/pfd.xml</path>
     <offsets>
-      <x-m>  0.204 </x-m>
-      <y-m> -0.387 </y-m>
-      <z-m>  0.286 </z-m>
+      <x-m>  0.202 </x-m>
+      <y-m> -0.335 </y-m>
+      <z-m>  0.229 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Starship/Models/Panel/Instruments/pfd/pfd.xml</path>
     <offsets>
-      <x-m> 0.204 </x-m>
-      <y-m> 0.387 </y-m>
-      <z-m> 0.286 </z-m>
+      <x-m> 0.202 </x-m>
+      <y-m> 0.335 </y-m>
+      <z-m> 0.229 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Starship/Models/Panel/Instruments/enav/enav.xml</path>
     <offsets>
-      <x-m>  0.204</x-m>
-      <y-m> -0.247 </y-m>
-      <z-m>  0.292 </z-m>
+      <x-m>  0.257</x-m>
+      <y-m> -0.150 </y-m>
+      <z-m>  0.276 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Starship/Models/Panel/Instruments/enav/enav.xml</path>
     <offsets>
-      <x-m> 0.204</x-m>
-      <y-m> 0.247 </y-m>
-      <z-m> 0.292 </z-m>
+      <x-m> 0.257 </x-m>
+      <y-m> 0.150 </y-m>
+      <z-m> 0.276 </z-m>
     </offsets>
   </model>
 
