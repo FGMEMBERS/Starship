@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<!-- <PropertyList include="starship-jsbsim-set.xml"> -->
-<PropertyList include="starship-yasim-set.xml">
+<!-- <PropertyList include="starship-jsbsim-cnf.xml"> -->
+<PropertyList include="starship-yasim-cnf.xml">
 
   <sim>
     <description>Beechcraft Starship I</description>

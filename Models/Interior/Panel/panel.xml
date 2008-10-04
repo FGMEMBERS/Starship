@@ -5,7 +5,7 @@
   <path>panel.ac</path>
 
   <model>
-    <path>Aircraft/Starship/Models/Panel/Instruments/pfd/pfd.xml</path>
+    <path>Aircraft/Starship/Models/Interior/Panel/Instruments/pfd/pfd.xml</path>
     <offsets>
       <x-m>  0.202 </x-m>
       <y-m> -0.335 </y-m>
@@ -14,7 +14,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Starship/Models/Panel/Instruments/pfd/pfd.xml</path>
+    <path>Aircraft/Starship/Models/Interior/Panel/Instruments/pfd/pfd.xml</path>
     <offsets>
       <x-m> 0.202 </x-m>
       <y-m> 0.335 </y-m>
@@ -23,25 +23,25 @@
   </model>
 
   <model>
-    <path>Aircraft/Starship/Models/Panel/Instruments/enav/enav.xml</path>
+    <path>Aircraft/Starship/Models/Interior/Panel/Instruments/enav/enav.xml</path>
     <offsets>
-      <x-m>  0.257</x-m>
+      <x-m>  0.209</x-m>
       <y-m> -0.150 </y-m>
       <z-m>  0.276 </z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/Starship/Models/Panel/Instruments/enav/enav.xml</path>
+    <path>Aircraft/Starship/Models/Interior/Panel/Instruments/enav/enav.xml</path>
     <offsets>
-      <x-m> 0.257 </x-m>
+      <x-m> 0.209 </x-m>
       <y-m> 0.150 </y-m>
       <z-m> 0.276 </z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/Starship/Models/Panel/Instruments/asi/asi.xml</path>
+    <path>Aircraft/Starship/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
       <x-m>  0.208</x-m>
       <y-m> -0.502 </y-m>
@@ -50,7 +50,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Starship/Models/Panel/Instruments/asi/asi.xml</path>
+    <path>Aircraft/Starship/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
       <x-m> 0.208</x-m>
       <y-m> 0.502 </y-m>
@@ -59,7 +59,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Starship/Models/Panel/Instruments/alt/alt.xml</path>
+    <path>Aircraft/Starship/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
       <x-m>  0.208</x-m>
       <y-m> -0.503 </y-m>
@@ -68,7 +68,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Starship/Models/Panel/Instruments/alt/alt.xml</path>
+    <path>Aircraft/Starship/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
       <x-m> 0.208</x-m>
       <y-m> 0.503 </y-m>

@@ -2,73 +2,100 @@
 
 <PropertyList>
 
- <sim include="Nasal/views.xml">
+  <sim include="Nasal/views.xml">
 
-  <author>BARANGER Emmanuel (3D)</author>
-  <aircraft-version>0.1</aircraft-version>
-  <status>Alpha</status>
+    <author>BARANGER Emmanuel (3D)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
 
-  <fuel-fraction>1.0</fuel-fraction>
+    <fuel-fraction>1.0</fuel-fraction>
 
-  <sound>
-   <path>Aircraft/Starship/Sounds/starship-sound.xml</path>
-  </sound>
+    <sound>
+      <path>Aircraft/Starship/Sounds/starship-sound.xml</path>
+    </sound>
 
-  <model>
-   <path>Aircraft/Starship/Models/starship.xml</path>
-  </model>
+    <model>
+      <path>Aircraft/Starship/Models/starship.xml</path>
+        <livery>
+          <file type="string">default</file>
+        </livery>
+    </model>
 
-  <startup>
-   <splash-texture>Aircraft/Starship/starship-splash.png</splash-texture>
-  </startup>
-  
+    <startup>
+      <splash-texture>Aircraft/Starship/starship-splash.png</splash-texture>
+    </startup>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Starship One</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close door</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/starship-menu.xml"/>
+
  </sim>
 
- <controls>
+  <controls>
+    <engines>
+       <engine n="0">
+         <magnetos>3</magnetos>
+       </engine>
+       <engine n="1">
+         <magnetos>3</magnetos>
+       </engine>
+     </engines>
+  </controls>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <level-gal_us archive="y">20</level-gal_us>
+      </tank>
+      <tank n="1">
+        <level-gal_us archive="y">20</level-gal_us>
+      </tank>
+      <tank n="2">
+        <level-gal_us archive="y">15</level-gal_us>
+      </tank>
+      <tank n="3">
+        <level-gal_us archive="y">15</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
   <engines>
-   <engine n="0">
-    <magnetos>3</magnetos>
-   </engine>
-   <engine n="1">
-    <magnetos>3</magnetos>
-   </engine>
+    <engine n="0">
+      <rpm>100</rpm>
+    </engine>
+    <engine n="1">
+      <rpm>100</rpm>
+    </engine>
   </engines>
- </controls>
 
- <consumables>
-  <fuel>
-   <tank n="0">
-    <level-gal_us archive="y">20</level-gal_us>
-   </tank>
-   <tank n="1">
-    <level-gal_us archive="y">20</level-gal_us>
-   </tank>
-   <tank n="2">
-    <level-gal_us archive="y">15</level-gal_us>
-   </tank>
-   <tank n="3">
-    <level-gal_us archive="y">15</level-gal_us>
-   </tank>
-  </fuel>
- </consumables>
- 
- <engines>
-  <engine n="0">
-   <rpm>100</rpm>
-  </engine>
-  <engine n="1">
-   <rpm>100</rpm>
-  </engine>
- </engines>
+  <input>
+    <keyboard include="Nasal/starship-keyboard.xml"/>
+  </input>
 
- <input>
-   <keyboard include="Nasal/starship-keyboard.xml"/>
- </input>
- 
- <nasal>
-   <starship>
-     <file>Aircraft/Starship/Nasal/doors.nas</file>
-   </starship>
- </nasal>
-  
+  <nasal>
+    <starship>
+      <file>Aircraft/Starship/Nasal/doors.nas</file>
+      <file>Aircraft/Starship/Nasal/liveries.nas</file>
+      <file>Aircraft/Starship/Nasal/light.nas</file>
+    </starship>
+  </nasal>
+
 </PropertyList>
