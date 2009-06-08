@@ -1,43 +1,58 @@
-<?xml version="1.0"?>
-
-<!-- Modified instrument of the Boeing 747 -->
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
- <path>boeing747-400-asi-jw.ac</path>
+  <path>asi.ac</path>
 
- <animation>
-  <type>rotate</type>
-  <object-name>Needle1</object-name>
-  <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
-  <interpolation>
-   <entry>
-    <ind>0</ind>
-    <dep>-9.5</dep>
-   </entry>
-   <entry>
-    <ind>60</ind>
-    <dep>0</dep>
-   </entry>
-   <entry>
-    <ind>250</ind>
-    <dep>244</dep>
-   </entry>
-   <entry>
-    <ind>300</ind>
-    <dep>265.5</dep>
-   </entry>
-   <entry>
-    <ind>450</ind>
-    <dep>331</dep>
-   </entry>
-  </interpolation>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 0.2 </green>
+      <blue>  0.0 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <interpolation>
+     <entry><ind>   0 </ind><dep>  -9.5 </dep></entry>
+     <entry><ind>  60 </ind><dep>   0.0 </dep></entry>
+     <entry><ind> 250 </ind><dep> 244.0 </dep></entry>
+     <entry><ind> 300 </ind><dep> 265.5 </dep></entry>
+     <entry><ind> 450 </ind><dep> 331.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 

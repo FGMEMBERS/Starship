@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -54,6 +54,7 @@
     <object-name>bolD</object-name>
     <object-name>heliceG</object-name>
     <object-name>heliceD</object-name>
+    <object-name>trous</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -61,6 +62,13 @@
     <object-name>propblurG</object-name>
     <object-name>propdiscD</object-name>
     <object-name>propblurD</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader.png</texture>
+    <object-name>vitres</object-name>
   </animation>
 
   <animation>
@@ -113,6 +121,7 @@
     <object-name>bolD</object-name>
     <object-name>heliceG</object-name>
     <object-name>heliceD</object-name>
+    <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -152,9 +161,9 @@
   <model>
     <path>Aircraft/Starship/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m> 0.0 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m> 0.0 </z-m>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -179,30 +188,12 @@
     <object-name>profondeurG</object-name>
     <property>/velocities/airspeed-kt</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 180.0 </ind>
-        <dep>   5.0 </dep>
-      </entry>
-      <entry>
-        <ind> 200.0 </ind>
-        <dep>  10.0 </dep>
-      </entry>
-      <entry>
-        <ind> 240.0 </ind>
-        <dep>  15.0 </dep>
-      </entry>
-      <entry>
-        <ind> 300.0 </ind>
-        <dep>  20.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1000.0 </ind>
-        <dep>   20.0 </dep>
-      </entry>
+      <entry><ind>    0 </ind><dep>  0 </dep></entry>
+      <entry><ind>  180 </ind><dep>  5 </dep></entry>
+      <entry><ind>  200 </ind><dep> 10 </dep></entry>
+      <entry><ind>  240 </ind><dep> 15 </dep></entry>
+      <entry><ind>  300 </ind><dep> 20 </dep></entry>
+      <entry><ind> 1000 </ind><dep> 20 </dep></entry>
     </interpolation>
     <center>
      <x-m> -6.039 </x-m>
@@ -210,9 +201,9 @@
      <z-m> -0.313 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -222,30 +213,12 @@
     <object-name>profondeurD</object-name>
     <property>/velocities/airspeed-kt</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 180.0 </ind>
-        <dep>   5.0 </dep>
-      </entry>
-      <entry>
-        <ind> 200.0 </ind>
-        <dep>  10.0 </dep>
-      </entry>
-      <entry>
-        <ind> 240.0 </ind>
-        <dep>  15.0 </dep>
-      </entry>
-      <entry>
-        <ind> 300.0 </ind>
-        <dep>  20.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1000.0 </ind>
-        <dep>   20.0 </dep>
-      </entry>
+      <entry><ind>    0 </ind><dep>  0 </dep></entry>
+      <entry><ind>  180 </ind><dep>  5 </dep></entry>
+      <entry><ind>  200 </ind><dep> 10 </dep></entry>
+      <entry><ind>  240 </ind><dep> 15 </dep></entry>
+      <entry><ind>  300 </ind><dep> 20 </dep></entry>
+      <entry><ind> 1000 </ind><dep> 20 </dep></entry>
     </interpolation>
     <center>
      <x-m> -6.039 </x-m>
@@ -253,13 +226,21 @@
      <z-m> -0.313 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y>  0.000 </y>
-      <z> -1.000 </z>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
     </axis>
   </animation>
 
   <!-- L'hélice gauche--> 
+  <animation>
+    <name>HeliceGauche</name>
+    <object-name>heliceG</object-name>
+    <object-name>bolG</object-name>
+    <object-name>propdiscG</object-name>
+    <object-name>propblurG</object-name>
+  </animation>
+
   <!-- Séléction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
@@ -302,10 +283,7 @@
 
   <animation>
     <type>spin</type>
-    <object-name>heliceG</object-name>
-    <object-name>bolG</object-name>
-    <object-name>propdiscG</object-name>
-    <object-name>propblurG</object-name>
+    <object-name>HeliceGauche</object-name>
     <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -314,14 +292,22 @@
      <z-m>  0.191 </z-m>
     </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
-<!-- L'hélice droite--> 
-<!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- L'hélice droite--> 
+  <animation>
+    <name>HeliceDroite</name>
+    <object-name>heliceD</object-name>
+    <object-name>bolD</object-name>
+    <object-name>propdiscD</object-name>
+    <object-name>propblurD</object-name>
+  </animation>
+
+  <!-- Séléction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscD</object-name>
@@ -363,10 +349,7 @@
 
   <animation>
     <type>spin</type>
-    <object-name>heliceD</object-name>
-    <object-name>bolD</object-name>
-    <object-name>propdiscD</object-name>
-    <object-name>propblurD</object-name>
+    <object-name>HeliceDroite</object-name>
     <property>engines/engine[1]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -375,9 +358,9 @@
      <z-m> 0.191 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -537,24 +520,20 @@
 
   <!-- Rentrée des roues -->
   <animation>
-    <type>rotate</type>
+    <name>TrainAvant</name>
     <object-name>axeA</object-name>
     <object-name>axeB</object-name>
     <object-name>roueA</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>TrainAvant</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep> 95.0 </dep>
-      </entry>
-      <entry>
-        <ind>  0.3 </ind>
-        <dep> 95.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.0</ind>
-        <dep> 0.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep> 95 </dep></entry>
+      <entry><ind> 0.3 </ind><dep> 95 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -5.112 </x-m>
@@ -562,31 +541,27 @@
       <z-m> -0.584 </z-m>
     </center>
     <axis>
-      <x>  0.00 </x>
-      <y>  1.00 </y>
-      <z>  0.00 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
   <animation>
-    <type>rotate</type>
+    <name>TrainGauche</name>
     <object-name>trainG1</object-name>
     <object-name>trainG2</object-name>
     <object-name>roueG</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>TrainGauche</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep> 90.0 </dep>
-      </entry>
-      <entry>
-        <ind>  0.3 </ind>
-        <dep> 90.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.0</ind>
-        <dep> 0.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep> 90 </dep></entry>
+      <entry><ind> 0.3 </ind><dep> 90 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m>  1.893 </x-m>
@@ -594,31 +569,27 @@
       <z-m> -0.423 </z-m>
     </center>
     <axis>
-      <x>  1.00 </x>
-      <y>  0.00 </y>
-      <z>  0.00 </z>
+      <x>  1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
   <animation>
-    <type>rotate</type>
+    <name>TrainDroit</name>
     <object-name>trainD1</object-name>
     <object-name>trainD2</object-name>
     <object-name>roueD</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>TrainDroit</object-name>
     <property>gear/gear[2]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep> 90.0 </dep>
-      </entry>
-      <entry>
-        <ind>  0.3 </ind>
-        <dep> 90.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.0</ind>
-        <dep> 0.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep> 90 </dep></entry>
+      <entry><ind> 0.3 </ind><dep> 90 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m>  1.893 </x-m>
@@ -626,9 +597,9 @@
       <z-m> -0.423 </z-m>
     </center>
     <axis>
-      <x> -1.00 </x>
-      <y>  0.00 </y>
-      <z>  0.00 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -638,18 +609,9 @@
     <object-name>porteAG1</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 0.3 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>   1.0</ind>
-        <dep> -95.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.3 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -95 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -5.293 </x1-m>
@@ -666,22 +628,10 @@
     <object-name>porteAG2</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>   0.2 </ind>
-        <dep> -95.0 </dep>
-      </entry>
-      <entry>
-        <ind>   0.8 </ind>
-        <dep> -95.0</dep>
-      </entry>
-      <entry>
-        <ind> 1.0</ind>
-        <dep> 0.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> -95 </dep></entry>
+      <entry><ind> 0.8 </ind><dep> -95 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -6.216 </x1-m>
@@ -698,18 +648,9 @@
     <object-name>porteAD1</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 0.3 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>   1.0</ind>
-        <dep> -95.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.3 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -95 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -4.820 </x1-m>
@@ -726,22 +667,10 @@
     <object-name>porteAD2</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>   0.2 </ind>
-        <dep> -95.0 </dep>
-      </entry>
-      <entry>
-        <ind>   0.8 </ind>
-        <dep> -95.0</dep>
-      </entry>
-      <entry>
-        <ind> 1.0</ind>
-        <dep> 0.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> -95 </dep></entry>
+      <entry><ind> 0.8 </ind><dep> -95 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -5.405 </x1-m>
@@ -758,18 +687,9 @@
     <object-name>porteG1</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 0.3 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>    1.0</ind>
-        <dep> -102.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 0.3 </ind><dep>    0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -102 </dep></entry>
     </interpolation>
     <axis>
       <x1-m>  1.815 </x1-m>
@@ -786,22 +706,10 @@
     <object-name>porteG2</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>    0.2 </ind>
-        <dep>  100.0 </dep>
-      </entry>
-      <entry>
-        <ind>   0.8 </ind>
-        <dep> 100.0</dep>
-      </entry>
-      <entry>
-        <ind> 1.0</ind>
-        <dep> 0.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> 100 </dep></entry>
+      <entry><ind> 0.8 </ind><dep> 100 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
     </interpolation>
     <axis>
       <x1-m>  2.022 </x1-m>
@@ -818,22 +726,10 @@
     <object-name>porteG3</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>    0.2 </ind>
-        <dep> -100.0 </dep>
-      </entry>
-      <entry>
-        <ind>    0.8 </ind>
-        <dep> -100.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.0</ind>
-        <dep> 0.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> -100 </dep></entry>
+      <entry><ind> 0.8 </ind><dep> -100 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>    0 </dep></entry>
     </interpolation>
     <axis>
       <x1-m>  1.371 </x1-m>
@@ -850,18 +746,9 @@
     <object-name>porteD1</object-name>
     <property>gear/gear[2]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 0.3 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>    1.0</ind>
-        <dep> -102.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 0.3 </ind><dep>    0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -102 </dep></entry>
     </interpolation>
     <axis>
       <x1-m>  2.309 </x1-m>
@@ -878,22 +765,10 @@
     <object-name>porteD2</object-name>
     <property>gear/gear[2]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>    0.2 </ind>
-        <dep>  100.0 </dep>
-      </entry>
-      <entry>
-        <ind>   0.8 </ind>
-        <dep> 100.0</dep>
-      </entry>
-      <entry>
-        <ind> 1.0</ind>
-        <dep> 0.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> 100 </dep></entry>
+      <entry><ind> 0.8 </ind><dep> 100 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
     </interpolation>
     <axis>
       <x1-m>  2.085 </x1-m>
@@ -910,22 +785,10 @@
     <object-name>porteD3</object-name>
     <property>gear/gear[2]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>    0.2 </ind>
-        <dep> -100.0 </dep>
-      </entry>
-      <entry>
-        <ind>    0.8 </ind>
-        <dep> -100.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.0</ind>
-        <dep> 0.0</dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> -100 </dep></entry>
+      <entry><ind> 0.8 </ind><dep> -100 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>    0 </dep></entry>
     </interpolation>
     <axis>
       <x1-m>  1.453 </x1-m>
@@ -944,19 +807,13 @@
     <object-name>roueA</object-name>
     <property>gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.000 </ind>
-        <dep> 0.300 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.3 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -966,14 +823,8 @@
     <object-name>roueG</object-name>
     <property>gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.000 </ind>
-        <dep> 0.300 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.3 </dep></entry>
     </interpolation>
     <axis>
       <x> 0.046775 </x>
@@ -988,14 +839,8 @@
     <object-name>roueD</object-name>
     <property>gear/gear[2]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.000 </ind>
-        <dep> 0.300 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.3 </dep></entry>
     </interpolation>
     <axis>
       <x> 0.046775 </x>
@@ -1006,9 +851,14 @@
 
   <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
   <animation>
-    <type>rotate</type>
+    <name>RoueAvant</name>
     <object-name>axeB</object-name>
     <object-name>roueA</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RoueAvant</object-name>
     <property>controls/flight/rudder</property>
     <factor> 30.0 </factor>
     <center>
@@ -1017,9 +867,9 @@
       <z-m> -1.545 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y>  0.000 </y>
-      <z> -1.000 </z>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
     </axis>
   </animation>
 
@@ -1035,9 +885,9 @@
       <z-m> -1.545 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -1052,9 +902,9 @@
       <z-m> -1.545 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -1069,9 +919,9 @@
       <z-m> -1.545 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -1081,14 +931,8 @@
     <object-name>porte</object-name>
     <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.00 </ind>
-        <dep> 0.00 </dep>
-      </entry>
-      <entry>
-        <ind>   1.00 </ind>
-        <dep> 135.00 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 135 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -2.765 </x1-m>

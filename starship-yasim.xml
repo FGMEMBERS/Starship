@@ -1,15 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!--
-YASIM flight model for the Beechcraft Starship I
-September 2007
+  YASIM flight model for the Beechcraft Starship I
+  September 2007
 
-Based on Avanti FDM by Guillaume CHAUVAT.
+  Based on Avanti FDM by Guillaume CHAUVAT.
 
-SPECS:
-Height: 3.66m			(12 ft)
-Length: 14m			(46 ft)
-Wing span: 16.50m		(54 ft)
-Max level spd: 622 km/h		(336 kts)
-Max TO weight: 5800m		(19000 ft)
+  SPECS:
+  Height: 3.66m			(12 ft)
+  Length: 14m			(46 ft)
+  Wing span: 16.50m		(54 ft)
+  Max level spd: 622 km/h	(336 kts)
+  Max TO weight: 5800m		(19000 ft)
 -->
 
 <airplane mass="13583">
