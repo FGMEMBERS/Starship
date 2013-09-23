@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList include="starship-base.xml">
 
  <sim>
 
-  <description>Beechcraft Starship I (YASim)</description>
-  <flight-model>yasim</flight-model>
-  <aero>starship-yasim</aero>
+    <description>Beechcraft Starship I (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <flight-model>yasim</flight-model>
+    <aero>starship-yasim</aero>
 
  </sim>
 
 </PropertyList>
-
 

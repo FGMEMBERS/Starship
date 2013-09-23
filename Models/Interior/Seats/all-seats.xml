@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/Starship/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -1.550 </x-m>
+      <y-m> -0.430 </y-m>
+      <z-m> -0.060 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -1.550 </x-m>
+      <y-m>  0.430 </y-m>
+      <z-m> -0.060 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -0.620 </x-m>
+      <y-m> -0.430 </y-m>
+      <z-m> -0.060 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -0.620 </x-m>
+      <y-m>  0.430 </y-m>
+      <z-m> -0.060 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m>  0.120 </x-m>
+      <y-m> -0.430 </y-m>
+      <z-m> -0.060 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m>  0.120 </x-m>
+      <y-m>  0.430 </y-m>
+      <z-m> -0.060 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m>  0.840 </x-m>
+      <y-m> -0.430 </y-m>
+      <z-m> -0.060 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m>  0.840 </x-m>
+      <y-m>  0.430 </y-m>
+      <z-m> -0.060 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m>  1.540 </x-m>
+      <y-m> -0.430 </y-m>
+      <z-m> -0.060 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Starship/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m>  1.540 </x-m>
+      <y-m>  0.430 </y-m>
+      <z-m> -0.060 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

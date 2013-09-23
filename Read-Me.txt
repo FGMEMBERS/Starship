@@ -30,8 +30,6 @@ d : Open/Close door
 Thanks
 ======
 
-Guillaume CHAUVAT for Avanti P180 FDM
-
 =================
 BARANGER Emmanuel
 Setpember, 04, 2007. 
@@ -71,12 +69,9 @@ d : Ouverture/fermeture porte
 Remerciements
 =============
 
-Guillaume CHAUVAT pour le FDM de l'Avanti P180
-
 =================
 BARANGER Emmanuel
 04 Septembre 2007.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
-
