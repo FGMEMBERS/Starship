@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <description>Beechcraft Starship I (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <sound>
+      <path>Aircraft/Starship/Sounds/starship-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/Starship/Models/starship.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <startup>
+      <splash-texture>Aircraft/Starship/starship-splash.png</splash-texture>
+    </startup>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="bool" n="8" alias="/engines/engine[0]/cranking"> 0 </int>       <!--  8 Cranking left -->
+        <int type="bool" n="9" alias="/engines/engine[1]/cranking"> 0 </int>       <!--  9 Cranking right -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m">  0 </float>                <!-- 11 altitude for MP shadow -->
+        <float n="3" alias="/position/altitude-ft">  0 </float>                <!-- 11 altitude for MP shadow -->
+        <float n="4" alias="/engines/engine[0]/rpm" />
+        <float n="5" alias="/engines/engine[1]/rpm" />
+        <float n="6" alias="/controls/engines/engine[0]/throttle" />
+        <float n="7" alias="/controls/engines/engine[1]/throttle" />
+        <string n="0" type="string" />
+        <string n="9" type="string" />                                        <!-- string[9] reserved for bombable mode -->
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Starship One</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close door</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/starship-menu.xml"/>
+
+ </sim>
+
+  <controls>
+    <engines>
+       <engine n="0">
+         <magnetos>3</magnetos>
+       </engine>
+       <engine n="1">
+         <magnetos>3</magnetos>
+       </engine>
+     </engines>
+  </controls>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <level-gal_us archive="y">20</level-gal_us>
+      </tank>
+      <tank n="1">
+        <level-gal_us archive="y">20</level-gal_us>
+      </tank>
+      <tank n="2">
+        <level-gal_us archive="y">15</level-gal_us>
+      </tank>
+      <tank n="3">
+        <level-gal_us archive="y">15</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <engines>
+    <engine n="0">
+      <rpm>100</rpm>
+    </engine>
+    <engine n="1">
+      <rpm>100</rpm>
+    </engine>
+  </engines>
+
+  <input>
+    <keyboard include="Nasal/starship-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/Starship/Nasal/doors.nas</file>
+    </doors>
+    <starship>
+      <file>Aircraft/Starship/Nasal/liveries.nas</file>
+      <file>Aircraft/Starship/Nasal/light.nas</file>
+    </starship>
+  </nasal>
+
+</PropertyList>
