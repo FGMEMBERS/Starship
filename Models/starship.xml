@@ -67,6 +67,7 @@
     <object-name>bolG</object-name>
     <object-name>bolD</object-name>
     
+    <object-name>moteurs</object-name>
     <object-name>trous</object-name>
     <object-name>trouscanardG</object-name>
     <object-name>trouscanardD</object-name>
@@ -121,6 +122,7 @@
     <object-name>bolG</object-name>
     <object-name>bolD</object-name>
     
+    <object-name>moteurs</object-name>
     <object-name>trous</object-name>
     <object-name>trouscanardG</object-name>
     <object-name>trouscanardD</object-name>
@@ -184,6 +186,7 @@
     <object-name>porteD3</object-name>
     <object-name>bolG</object-name>
     <object-name>bolD</object-name>
+    <object-name>moteurs</object-name>
   </effect>
 
   <effect>
@@ -219,6 +222,7 @@
     <object-name>porteD3</object-name>
     <object-name>bolG</object-name>
     <object-name>bolD</object-name>
+    <object-name>moteurs</object-name>
   </effect>
 
   <animation>
